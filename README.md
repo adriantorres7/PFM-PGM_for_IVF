@@ -1,6 +1,6 @@
 # Validation on Real Data of an Extended Embryo-Uterine Probabilistic Graphical Model for Embryo Selection
 
-This repository contains all the code used in the development of a Master's thesis submitted as part of the MSc in Fundamental Principles of Data Science supervised by Jerónimo Hernández-González and Jesús Cerquides. The project deals with the problem of embryo selection, using a probabilistic graphical model to select the most promising ones. An extensive experimental setup is assembled to validate the model using data from real patients following ART treatments. The [Master's Thesis report](Master_Thesis_Report) can also be found in this repository.
+This repository contains all the code used in the development of a Master's thesis submitted as part of the MSc in Fundamental Principles of Data Science supervised by Jerónimo Hernández-González and Jesús Cerquides. The project deals with the problem of embryo selection, using a probabilistic graphical model to select the most promising ones. An extensive experimental setup is assembled to validate the model using data from real patients following ART treatments. The [Master's Thesis report](Master_Thesis_Report.pdf) can also be found in this repository.
 
 ## PGM for IVF
 Embryo selection is a critical step in assisted reproduction (ART): a good selection criteria is expected to increase the probability of inducing pregnancy. In the past, machine learning methods have been used to predict implantation and to rank the most promising embryos. One of the main obstacles when dealing with this type of data is that it is only partially labeled. Current tecniques are able to determine the number of embryos implanted in a cycle but not their identity.
@@ -22,10 +22,10 @@ The model is compared against a set of simpler baseline methods to test differen
 
 ## Structure of the repository
 + All functions, classes and the learning algorithms are stored in [src](src).
-+ The training of the models take place in their respective experiments code (e.g., [baseline_0.py](baseline_0.py)). Running these files starts the whole process: loading the data and preprocessing it (directly in the initialization method of the dataset class), creating the EM object (if needed) and training the corresponding model. Results are automatically stored in pickle files in the [results](results) folder. The different experiments are:
++ The training of the models take place in their respective experiments code (e.g., [baseline.py](baseline.py)). Running these files starts the whole process: loading the data and preprocessing it (directly in the initialization method of the dataset class), creating the EM object (if needed) and training the corresponding model. Results are automatically stored in pickle files in the [results](results) folder. The different experiments are:
   * [Probabilistic graphical model](fullmodel.py)
   * [Probabilistic graphical model (hiding the ASEBIR score)](fullmodel_hidden.py)
-  * [Baseline_0](baseline_0.py)
+  * [Baseline_0](baseline.py)
   * [Baseline_cycles](baseline_cycles.py)
   * [Naive EM](baseline_NaiveEM.py)
   * [EM with LP](baseline_EM.py)
