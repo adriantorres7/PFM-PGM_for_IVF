@@ -32,6 +32,7 @@ The model is compared against a set of simpler baseline methods to test differen
 + Notebook [data_exploration.ipynb](data_exploration.ipynb) presents an exploration of the data, investigating some useful initial insights.
 + Notebook [results.ipynb](results.ipynb) shows the results for the probabilistic graphical model along with all the baseline methods to compare against.
 + The [Master's Thesis report](Master_Thesis_Report.pdf).
++ The [Presentation slides](Presentation.pdf).
 
 ## Data
 Since the data describes real patients following ART treatments we are not allowed to publish it here. If you want to obtain the data in order to reproduce the results you can request it writing to [Adrián Torres](mailto:adriantorresmartin@gmail.com) and your petition will be evaluated.
